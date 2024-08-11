@@ -1,17 +1,16 @@
-/* Resetting default margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #bbbbbb;
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    transform: scale(0.9);
 }
 
 .container {
@@ -81,7 +80,5 @@ button:hover {
 
 .flag {
     display: inline-block;
-    
     vertical-align: middle;
-    
 }
