@@ -1,0 +1,87 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bbbbbb;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#swapButton{
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+#rate {
+    margin-top: 15px;
+    color: #004fa2;
+}
+
+#result {
+    margin-top: 5px;
+    color: #004fa2;
+    font-size: 30px;
+}
+
+.flag {
+    display: inline-block;
+    
+    vertical-align: middle;
+    
+}

@@ -1,0 +1,92 @@
+<!--  Crhistian Vera 
+ Student Number  200557901
+
+links to the tutorial and documentation
+https://www.exchangerate-api.com/docs/pair-conversion-requests
+https://www.youtube.com/watch?v=37vxWr0WgQk&list=PL2HDlv-0QdyqB3etJGlkIYdwjZ7pwvQTv&index=43 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" value="1">
+        </div>
+        
+        <div class="form-group">
+            <label for="fromCurrency">From:</label>
+            <div id="imgContenedor1" class="flag"></div>
+            <select id="fromCurrency" onchange="getImg1()">
+                <option value="USD" >USD - United States Dollar</option>
+                <option value="EUR" >EUR - Euro</option>
+                <option value="GBP" >GBP - British Pound Sterling</option>
+                <option value="JPY" >JPY - Japanese Yen</option>
+                <option value="COP" >COP - Colombian Peso</option>
+                <option value="AUD" >AUD - Australian Dollar</option>
+                <option value="CAD" >CAD - Canadian Dollar</option>
+                <option value="CHF" >CHF - Swiss Franc</option>
+                <option value="CNY" >CNY - Chinese Yuan</option>
+                <option value="HKD" >HKD - Hong Kong Dollar</option>
+                <option value="NZD" >NZD - New Zealand Dollar</option>
+                <option value="SEK" >SEK - Swedish Krona</option>
+                <option value="KRW" >KRW - South Korean Won</option>
+                <option value="SGD" >SGD - Singapore Dollar</option>
+                <option value="NOK" >NOK - Norwegian Krone</option>
+                <option value="MXN" >MXN - Mexican Peso</option>
+                <option value="INR" >INR - Indian Rupee</option>
+                <option value="RUB" >RUB - Russian Ruble</option>
+                <option value="ZAR" >ZAR - South African Rand</option>
+                <option value="TRY">TRY - Turkish Lira</option>
+                <option value="BRL" >BRL - Brazilian Real</option>
+            </select>
+        </div>
+        <button id="swapButton">Swap &uarr;&darr;</button>
+        <br>
+        <br>
+
+        <div class="form-group">
+            <label for="toCurrency">To:</label>
+            <div id="imgContenedor2" class="flag"></div>
+            <select id="toCurrency" onchange="getImg2()">
+                <option value="EUR">EUR - Euro</option>
+                <option value="USD">USD - United States Dollar</option>
+                <option value="GBP">GBP - British Pound Sterling</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="COP">COP - Colombian Peso</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="HKD">HKD - Hong Kong Dollar</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+                <option value="SEK">SEK - Swedish Krona</option>
+                <option value="KRW">KRW - South Korean Won</option>
+                <option value="SGD">SGD - Singapore Dollar</option>
+                <option value="NOK">NOK - Norwegian Krone</option>
+                <option value="MXN">MXN - Mexican Peso</option>
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="RUB">RUB - Russian Ruble</option>
+                <option value="ZAR">ZAR - South African Rand</option>
+                <option value="TRY">TRY - Turkish Lira</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+            </select>
+        </div>
+
+        <button id="convertButton">Convert</button>
+        <div>
+        <p id="rate">Exchange Rate: </p>
+        <p id="result">Converted Amount: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
